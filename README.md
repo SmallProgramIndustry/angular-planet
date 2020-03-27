@@ -16,7 +16,7 @@ https://github.com/worktile/ngx-planet
 
 `npm run start`
 
-`open http://localhost:4200 `
+`open http://localhost:3000 `
 
 ## Code scaffolding
 
