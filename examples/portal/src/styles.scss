@@ -1,0 +1,19 @@
+$layout-content-background: #fff;
+$primary: #348fe4;
+
+$btn-border-radius: 4px;
+$btn-border-radius-lg: 4px;
+$btn-border-radius-sm: 4px;
+$btn-border-radius-xs: 4px;
+
+@import 'ngx-tethys/styles/variables.scss';
+@import 'ngx-tethys/styles/index.scss';
+
+@import './app/app.component.scss';
+
+body,
+html {
+    height: 100%;
+}
+
+@import '../../common/section-card/section-card.component.scss';

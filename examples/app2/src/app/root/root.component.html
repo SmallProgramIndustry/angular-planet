@@ -1,0 +1,14 @@
+<thy-layout>
+  <thy-sidebar>
+    <div class="sidebar-header">
+      <span class="title cursor-pointer">App2</span>
+    </div>
+    <div class="sidebar-content">
+      <thy-menu>
+        <a thyMenuItem [routerLink]="['/app2/dashboard']" routerLinkActive="active">App2 Dashboard</a>
+        <a thyMenuItem [routerLink]="['/app2/projects']" routerLinkActive="active">App2 Projects</a>
+      </thy-menu>
+    </div>
+  </thy-sidebar>
+  <router-outlet></router-outlet>
+</thy-layout>

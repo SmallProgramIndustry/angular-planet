@@ -1,0 +1,32 @@
+<section-card class="mt-2" title="AppRootContext's data is be shared globally">
+  <span class="text-desc">appRootContext.name: </span> <span class="text-danger">{{ appRootContext.name }}</span>
+  <a href="javascript:;" class="ml-2" (click)="changeName('new name')">set new name</a>
+</section-card>
+
+<section-card class="mt-4" title="Counter service, it will be cache in coexist mode">
+  <h5 class="red">count: {{ counter.count }}</h5>
+  <div class="btn-pair">
+    <button thyButton="primary-square" (click)="counter.increase()">Increase</button>
+    <button thyButton="outline-primary-square" (click)="counter.decrease()">Decrease</button>
+  </div>
+</section-card>
+
+<section-card class="mt-4" title="Open portal's detail">
+  <button thyButton="primary-square" (click)="openADetail()">Open portal's detail</button>
+</section-card>
+
+<section-card class="mt-4" title="Render app2's component">
+  <div class="btn-pair">
+    <button thyButton="primary-square" (click)="openApp2Component()">Open App2 Projects</button>
+    <button thyButton="primary-square" (click)="disposeApp2Component()">Dispose App2 Projects</button>
+  </div>
+  <div #container></div>
+</section-card>
+
+<section-card class="mt-4" title="Render app1's component">
+  <div class="btn-pair">
+    <button thyButton="primary-square" (click)="openApp1Component()">Open App1 dashboard</button>
+    <button thyButton="primary-square" (click)="disposeApp1Component()">Dispose App1 dashboard</button>
+  </div>
+  <div #container1></div>
+</section-card>
