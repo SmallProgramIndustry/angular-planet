@@ -11,7 +11,7 @@ if (environment.production) {
 
 // platformBrowserDynamic().bootstrapModule(AppModule)
 //   .catch(err => console.error(err));
-defineApplication('app1', (portalApp: PlanetPortalApplication) => {
+defineApplication('sso', (portalApp: PlanetPortalApplication) => {
     return platformBrowserDynamic([
         {
             provide: PlanetPortalApplication,

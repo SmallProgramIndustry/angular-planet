@@ -88,24 +88,6 @@ export class AppComponent implements OnInit {
                 }
             },
             {
-                name: 'sso',
-                hostParent: '#app-host-container',
-                selector: 'sso-root',
-                hostClass: appHostClass,
-                routerPathPrefix: '/sso',
-                preload: settings.sso.preload,
-                switchMode: settings.sso.switchMode,
-                // prettier-ignore
-                scripts: [
-                    '/static/sso/main.js'
-                ],
-                manifest: '/static/sso/manifest.json',
-                extra: {
-                    name: 'sso',
-                    color: '#66c060'
-                }
-            },
-            {
                 name: 'app3',
                 hostParent: '#app-host-container',
                 selector: 'app3-root',

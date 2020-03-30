@@ -16,7 +16,7 @@ PROXY_CONFIG['/static/app2'] = {
 
 PROXY_CONFIG['/static/app3'] = {
     target: 'http://localhost:3003',
-    pathRewrite: { '^/static/app3': '' },
+    // pathRewrite: { '^/static/app3': '' },
     secure: false,
     changeOrigin: true
 };

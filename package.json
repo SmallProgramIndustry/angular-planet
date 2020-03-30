@@ -1,6 +1,6 @@
 {
   "name": "@worktile/planet",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A powerful, reliable, fully-featured and production ready Micro Frontend library for Angular.",
   "keywords": [
     "micro front-end",
@@ -15,13 +15,13 @@
     "ng": "ng",
     "// start": "run app1 and app2 use webpack dev-server",
     "start": "concurrently \"npm run serve:portal\" \"npm run serve:app1\" \"npm run serve:app2\" \"npm run serve:app3\"",
-    "build:prod": "concurrently \"build:portal:prod\" \"build:app1:prod\" \"build:app2:prod\" \"build:app3:prod\" ",
+    "build:prod": "concurrently \"npm run build:portal:prod\" \"npm run build:app1:prod\" \"npm run build:app2:prod\" \"npm run build:app3:prod\" ",
     "// start:dev": "concurrently \"npm run serve:portal\" \"npm run build:app1:dev\" \"npm run build:app2:dev\"",
     "serve:portal": "ng run portal:serve",
     "serve:app1": "ng serve app1 --deploy-url=/static/app1/",
     "serve:app2": "ng serve app2 --deploy-url=/static/app2/",
     "serve:app3": "ng serve app3 --deploy-url=/static/app3/",
-    "serve:sso": "ng serve app3 --deploy-url=/static/sso/",
+    "serve:sso": "ng serve sso --deploy-url=/static/sso/",
     "dev:app1": "ng serve app1",
     "build:portal": "ng build",
     "build:app1": "ng build app1",
